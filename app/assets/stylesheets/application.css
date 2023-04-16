@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin: 20px;
+ }
