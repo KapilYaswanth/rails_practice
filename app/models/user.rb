@@ -1,7 +1,6 @@
 class User < ApplicationRecord
-  has_secure_password
-  #password: string virtual attribute
-  #password_confirmation: string virtual attribute
+  validates :name, presence: true
+  validates :email, presence: true
 
-  validates :email, presence: true, format: {with: /\A[^@\s]+@[^@\s]+\z/, message: 'enter a valid email'}
+  has_many :microposts
 end
