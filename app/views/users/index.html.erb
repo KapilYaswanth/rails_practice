@@ -4,7 +4,7 @@
 
 <div id="users">
   <% @users.each do |user| %>
-    <%= render "user", user: user %>
+    <%= render "user", user: user, microposts: user.microposts %>
     <p>
       <%= link_to "Show this user", user %>
     </p>
